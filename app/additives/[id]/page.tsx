@@ -72,9 +72,7 @@ const getSafetyInfo = (rating: string) => {
   }
 }
 
-export function generateStaticParams() {
-  return Object.keys(additives).map((id) => ({ id }));
-}
+export const dynamic = "force-dynamic";
 
 
 export default function AdditiveDetailPage({ params }: { params: { id: string } }) {
