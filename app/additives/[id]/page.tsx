@@ -72,6 +72,11 @@ const getSafetyInfo = (rating: string) => {
   }
 }
 
+export function generateStaticParams() {
+  return Object.keys(additives).map((id) => ({ id }));
+}
+
+
 export default function AdditiveDetailPage({ params }: { params: { id: string } }) {
   // In a real app, you would fetch additive data from an API using the ID
   // For this demo, we'll use mock data
