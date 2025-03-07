@@ -10,7 +10,16 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { useProductStore } from "@/lib/store"
 import { useToast } from "@/components/ui/use-toast"
 
-export const dynamic = "force-dynamic";
+
+export function generateStaticParams() {
+  const products = [
+    { id: "1" },
+    { id: "2" },
+    { id: "3" },
+  ]
+
+  return products.map((product) => ({ id: product.id }))
+}
 
 export default function ProductPage({ params }: { params: { id: string } }) {
   const { scannedProduct } = useProductStore()
