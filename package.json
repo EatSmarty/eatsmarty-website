@@ -1,5 +1,5 @@
 {
-  "name": "my-v0-project",
+  "name": "eatsmarty",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -52,7 +52,7 @@
     "next": "15.1.0",
     "next-themes": "latest",
     "react": "^19",
-    "react-day-picker": "8.10.1",
+    "react-day-picker": "^9.5.1",
     "react-dom": "^19",
     "react-hook-form": "^7.54.1",
     "react-resizable-panels": "^2.1.7",
