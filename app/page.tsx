@@ -2,7 +2,6 @@ import Link from "next/link"
 import { ArrowRight, Carrot, Coffee, Fish, Milk, Pizza, Sandwich } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import FloatingPaths from "@/components/floadting-bg"
 
 const categories = [
   {
@@ -48,15 +47,9 @@ const categories = [
 
 
 export default function Home() {
-  
-
   return (
     <div className="container mx-auto px-4 py-12 z-10">
-      <div className="absolute inset-0">
-        <FloatingPaths position={1} />
-        <FloatingPaths position={-1} />
-      </div>
-      <section className="mb-16 flex flex-col items-center text-center">
+      <section className="mb-16 flex flex-col items-center text-center z-10">
         <h1 className="mb-4 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
           Know what&apos;s in your food
         </h1>
