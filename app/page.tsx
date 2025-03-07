@@ -51,7 +51,7 @@ export default function Home() {
   
 
   return (
-    <div className="container mx-auto px-4 py-12">
+    <div className="container mx-auto px-4 py-12 z-10">
       <div className="absolute inset-0">
         <FloatingPaths position={1} />
         <FloatingPaths position={-1} />
