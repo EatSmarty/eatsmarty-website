@@ -1,4 +1,4 @@
-# [🌐Eatsmarty](eatsmarty.github.io/eatsmarty-website/)
+# [🌐Eatsmarty](https://eatsmarty.github.io/eatsmarty-website/)
 
 ## 💻Tech Stack
 
