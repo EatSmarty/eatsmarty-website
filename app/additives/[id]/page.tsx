@@ -4,6 +4,14 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
 
+// This function tells Next.js which paths to pre-render at build time
+export async function generateStaticParams() {
+  // Common additives for static generation
+  const commonAdditives = ["E100", "E150a", "E202", "E211", "E306", "E330", "E621", "E951"]
+
+  return commonAdditives.map((id) => ({ id }))
+}
+
 // Mock data for additives
 const additives = {
   E100: {
@@ -71,11 +79,6 @@ const getSafetyInfo = (rating: string) => {
       }
   }
 }
-
-export function generateStaticParams() {
-  return Object.keys(additives).map((id) => ({ id }));
-}
-
 
 export default function AdditiveDetailPage({ params }: { params: { id: string } }) {
   // In a real app, you would fetch additive data from an API using the ID
