@@ -8,6 +8,7 @@ export async function generateStaticParams() {
     "7622210449283", // Oreo
     "8000500310427", // Ferrero Rocher
     "3017620422003", // Kinder Bueno
+    "3017620425035",
   ]
 
   return commonBarcodes.map((id) => ({ id }))

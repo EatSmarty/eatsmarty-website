@@ -17,8 +17,6 @@ export default function ScanPage() {
   const handleScan = (result: string) => {
     setIsScanning(false)
 
-    // In a real app, you would fetch product data from an API using the barcode
-    // For this demo, we'll use a mock product
     const mockProduct = {
       id: result,
       name: "Organic Granola Cereal",
@@ -51,7 +49,6 @@ export default function ScanPage() {
       description: `Barcode: ${result}`,
     })
 
-    // Navigate to product page
     router.push(`/product/${result}`)
   }
 
