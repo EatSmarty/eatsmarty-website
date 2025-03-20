@@ -16,6 +16,10 @@ interface Product {
   }
   ingredients: string[]
   additives: string[]
+  nutriscoreGrade?: string | null
+  novaGroup?: number | null
+  ecoScore?: string | null
+  categories?: string[]
 }
 
 // Product store
